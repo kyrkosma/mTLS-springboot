@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: mtls-springboot
+
+external-services:
+  badssl: #client certificate and password publicly available at https://badssl.com/download/
+    base-url: "https://client.badssl.com"
+    client-cert-path: "classpath:keystore/badssl.com-client.p12"
+    client-cert-password: "badssl.com"
